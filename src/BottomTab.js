@@ -5,11 +5,11 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from './Screens/Home';
-import Leagues from './Screens/Leagues';
-import Research from './Screens/Research';
-import Leaderboard from './Screens/Leaderboard';
-import Profile from './Screens/Profile';
+import Home from './screens/Home';
+import Leagues from './screens/Leagues';
+import Research from './screens/Research';
+import Leaderboard from './screens/Leaderboard';
+import Profile from './screens/Profile';
 
 const Tab = createBottomTabNavigator();
 
