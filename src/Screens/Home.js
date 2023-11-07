@@ -115,11 +115,11 @@ const Home = () => {
                     <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10 }}>What’s your prediction?</Text>
                     <View style={styles.btnContainer}>
                         <Pressable style={styles.btn}>
-                        <Entypo name="arrow-bold-down" color={'#FFFFFF'} size={18} style={{paddingHorizontal:10}} />
+                        <Entypo name="arrow-bold-down" color={'#FFFFFF'} size={18} style={{paddingHorizontal:5}} />
                             <Text style={{ color: '#fff', fontSize: 14, fontWeight: '600' }}>Under</Text>
                         </Pressable>
                         <Pressable onPress={() => setModal(true)} style={[styles.btn, { backgroundColor: '#6231AD' }]}>
-                        <Entypo name="arrow-bold-up" color={'#FFFFFF'} size={18} style={{paddingHorizontal:10}} />
+                        <Entypo name="arrow-bold-up" color={'#FFFFFF'} size={18} style={{paddingHorizontal:5}} />
                             <Text style={{ color: '#fff', fontSize: 14, fontWeight: '600' }}>Over</Text>
                         </Pressable>
                     </View>
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#452C55',
         borderRadius: 50,
         paddingVertical: 12,
-        paddingHorizontal: 48
+        paddingHorizontal: 40
     },
     bottomContainer: {
         backgroundColor: '#F6F3FA',
