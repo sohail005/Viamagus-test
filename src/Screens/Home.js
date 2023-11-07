@@ -2,6 +2,11 @@ import { StyleSheet, Text, View, Image, Pressable, Dimensions, useWindowDimensio
 import React, { useState } from 'react';
 import * as Progress from 'react-native-progress';
 import { Picker, DatePicker } from 'react-native-wheel-pick-2';
+import Feather from 'react-native-vector-icons/Feather';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Entypo from 'react-native-vector-icons/Entypo';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 const w = Dimensions.get('screen').width;
 const Home = () => {
@@ -72,11 +77,11 @@ const Home = () => {
                     <View style={styles.info1}>
                         <View style={styles.infochiled1}>
                             <Text style={styles.DataTextTitle}>UNDER OR OVER</Text>
-                            <Image source={require('../Assets/information.png')} style={{ width: 16, height: 16 }} />
+                            <Feather name="info" color={'#D2BAF5'} size={18} />
                         </View>
                         <View style={styles.infochiled1}>
                             <Text style={[styles.DataTextTitle, { fontWeight: '400', fontSize: 12 }]}>Starting in</Text>
-                            <Image source={require('../Assets/time.png')} style={{ width: 16, height: 16 }} />
+                            <MaterialIcons name="access-time-filled" color={'#D2BAF5'} size={18} />
                             <Text style={[styles.DataTextTitle, { fontWeight: '400' }]}>03:23:12</Text>
                         </View>
                     </View>
@@ -110,11 +115,11 @@ const Home = () => {
                     <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10 }}>What’s your prediction?</Text>
                     <View style={styles.btnContainer}>
                         <Pressable style={styles.btn}>
-                            <Image source={require('../Assets/down-arrow.png')} style={{ width: 16, height: 16, marginRight: 10 }} />
+                        <Entypo name="arrow-bold-down" color={'#FFFFFF'} size={18} style={{paddingHorizontal:10}} />
                             <Text style={{ color: '#fff', fontSize: 14, fontWeight: '600' }}>Under</Text>
                         </Pressable>
                         <Pressable onPress={() => setModal(true)} style={[styles.btn, { backgroundColor: '#6231AD' }]}>
-                            <Image source={require('../Assets/up-arrow.png')} style={{ width: 16, height: 16, marginRight: 10 }} />
+                        <Entypo name="arrow-bold-up" color={'#FFFFFF'} size={18} style={{paddingHorizontal:10}} />
                             <Text style={{ color: '#fff', fontSize: 14, fontWeight: '600' }}>Over</Text>
                         </Pressable>
                     </View>
@@ -123,12 +128,12 @@ const Home = () => {
                 <View style={styles.bottomContainer}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                         <View style={styles.bottomContainerChild}>
-                            <Image source={require('../Assets/profile.png')} style={{ width: 16, height: 16, marginRight: 10 }} />
-                            <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10 }}>355 Players</Text>
+                        <Ionicons name="person" color={'#727682'} size={18} style={{paddingHorizontal:5}} />
+                            <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10,color:'#727682' }}>355 Players</Text>
                         </View>
                         <View style={styles.bottomContainerChild}>
-                            <Image source={require('../Assets/mountain-graph.png')} style={{ width: 16, height: 16, marginRight: 10 }} />
-                            <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10 }}>View chart</Text>
+                        <FontAwesome5 name="chart-area" color={'#727682'} size={18} style={{paddingHorizontal:5}} />
+                            <Text style={{ fontWeight: '600', fontSize: 14, marginVertical: 10,color:'#727682' }}>View chart</Text>
                         </View>
                     </View>
                     {/* Progress Bar */}
